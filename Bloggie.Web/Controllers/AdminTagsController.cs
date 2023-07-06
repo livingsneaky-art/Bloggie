@@ -32,6 +32,7 @@ namespace Bloggie.Web.Controllers
             };
 
             bloggieDbContext.Tags.Add(tag);
+            // Save
             bloggieDbContext.SaveChanges();
 
             return View("Add");
